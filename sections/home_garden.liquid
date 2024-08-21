@@ -1,0 +1,28 @@
+<div class="">
+<video src="{{ 'secondvide.mp4' | asset_url }}" autoplay loop muted playsinline class="intro__vid"></video>
+</div>
+
+<style>
+.intro__vid{
+    width:100%;
+}
+
+@media screen and (max-width: 1200px){
+    .home__intro__vid-garden{
+        display:none
+    }
+        .intro__vid{
+    width:100%;
+    height:auto;
+}
+}
+@media screen and (max-width: 640px){
+    .home__intro__vid-garden{
+        display:none
+    }
+    .intro__vid{
+    width:100%;
+    height:auto;
+}
+}
+</style>

@@ -1,0 +1,219 @@
+ <div class="desktop__home__intro">
+   <div class="bg__wrapper">
+    <div class="bg__intro__main">
+      <h1 class="ex__heading">Exquisite Cookware <br> Made In France <br><span class="ex1__heading">Since 1826</span></h1>
+      <p class="ex__para b1">Cristel<sup><span class="registeredsignhead">®</span></sup> is rooted in tradition and refined through innovation. Experience why our cookware has been inspiring chefs for generations.</p>
+      <div class="ex__button__Wrapper">
+      <button class="ex__but"><a href="https://www.cristelusa.com/collections/best-sellers">SHOP NOW</a></button>
+      </div>
+    </div>
+   </div>
+ </div>
+
+<style>
+.bg__wrapper {
+  background-color: #FFFDF5;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  height:95vh;
+}
+.bg__intro__main{
+  display:flex;
+  flex-direction:column;
+   justify-content:center;
+   align-items:center;
+  position:relative;
+  top:70px;
+}
+
+.ex__heading{
+  max-width:681px;
+  font-family:columbia-reqular;
+  color:#4C303F;
+  text-align:center;
+  
+}
+.ex1__heading{
+  font-family:gourment-french;
+  font-size:58px;
+         line-height:72px;
+  color:#4C303F;
+    text-align:center;
+    letter-spacing:1.2px
+}
+.ex__para{
+   margin-top:60px;
+  max-width:791px;
+  font-family:work-sans;
+  color:#4C303F;
+    text-align:center;
+}
+
+.ex__button__Wrapper{
+ 
+}
+.ex__but {
+  margin-top: 60px;
+  color: #4C303F;
+  font-size: 14px;
+  line-height: 24px;
+  width: 174px;
+  border: none;
+  background-color: #FFFDF5;
+  cursor: pointer;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-family: work-sans;
+  position: relative;
+  overflow: hidden;
+border-bottom:1px solid #4C303F;
+padding-bottom:10px;
+}
+
+.ex__but a{
+    color: #4C303F;
+}
+.ex__but:hover{
+  border-bottom:none;
+}
+.ex__but::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #4C303F;
+  bottom: 0;
+  left: -100%;
+  
+  transition: left 0.4s;
+}
+
+.ex__but:hover::after {
+  left: 0;
+}
+
+.ex__but::after {
+  left: -100%;
+}
+
+.ex__but:hover::after {
+  left: 0;
+}
+
+.ex__but:hover::after {
+  animation: slideIn 0.4s forwards;
+}
+
+.ex__but:not(:hover)::after {
+  animation: slideOut 0.4s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+} 
+
+
+@media screen and (max-width: 1200px){
+    .bg__intro__main{
+  display:flex;
+  flex-direction:column;
+   justify-content:center;
+   align-items:center;
+  position:relative;
+  top:70px;
+  margin-left:80px;
+  margin-right:80px;
+}
+
+.ex__para{
+   margin-top:60px;
+  max-width:738px;
+  font-family:work-sans;
+  color:#4C303F;
+    text-align:center;
+    
+}
+.ex__but {
+  margin-top: 60px;
+  color: #4C303F;
+  font-size: 14px;
+  line-height: 24px;
+  width: 174px;
+  border: none;
+  background-color: #FFFDF5;
+  cursor: pointer;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-family: work-sans;
+  position: relative;
+  overflow: hidden;
+border-bottom:1px solid #4C303F;
+padding-bottom:10px;
+}
+}
+
+@media screen and (max-width: 640px){
+    .bg__intro__main{
+  display:flex;
+  flex-direction:column;
+   justify-content:center;
+   align-items:center;
+  position:relative;
+  top:70px;
+  margin-left:36px;
+  margin-right:36px;
+}
+.ex1__heading{
+  font-family:gourment-french;
+  font-size:33px;
+  line-height:20px;
+  color:#4C303F;
+    text-align:center;
+    letter-spacing:0.5px
+}
+.ex__para{
+   margin-top:30px;
+  max-width:303px;
+  font-family:work-sans;
+  color:#4C303F;
+    text-align:center;
+    font-size:15px;
+    line-height:20px;
+    
+}
+.ex__but {
+  margin-top: 30px;
+  color: #4C303F;
+  font-size: 14px;
+  line-height: 24px;
+  width: 174px;
+  border: none;
+  background-color: #FFFDF5;
+  cursor: pointer;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-family: work-sans;
+  position: relative;
+  overflow: hidden;
+border-bottom:1px solid #4C303F;
+padding-bottom:10px;
+}
+}
+
+
+</style>

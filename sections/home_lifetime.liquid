@@ -1,0 +1,389 @@
+<div class="desktop__lifetime">
+  <div class="lifetime__col__bg__wrapper">
+  <div class="lifetime__col__main__wrapper">
+  <img src="{{ 'LifetimeGuaran.webp' | asset_url }}" class="lifetime__col__image"/>
+ 
+  <div class="lifetime__col__text__wrapper">
+  <h1 class="lifetime__col__head">Lifetime Guarantee</h1>
+  <p class="lifetime__col__subtext b2">Enjoy peace of mind with Cristel<sup><span class="">®</span></sup> Lifetime Guarantee on stainless steel cookware. Our dedication to quality means your cookware is built to last, supporting your culinary adventures for a lifetime.</p>
+  <button class="lifetime__col__button"><a href="https://www.cristelusa.com/pages/collection">SHOP NOW</a></button>
+  </div>
+  
+  </div>
+  </div>
+</div>
+
+
+<div class="tablet__mobile__world__collection">
+<div class="tablet__mobile__lifetime__bg">
+  <div class="tablet__mobile__lifetime__wrapper">
+  <div class="tablet__mobile__lifetime__text__wrapper">
+ <h1 class="tab__mob__lifetime__col__head">Lifetime Guarantee</h1>
+     <p class="tab__mob__subtext b2">Enjoy peace of mind with Cristel<sup><span class="">®</span></sup> Lifetime Guarantee on stainless steel cookware. Our dedication to quality means your cookware is built to last, supporting your culinary adventures for a lifetime.</p>
+    <div class="tab__mob__col__button__mobile__wrapper">
+     <button class="tab__mob__col__button__mobile"><a href="https://www.cristelusa.com/pages/collection">SHOP NOW</a></button>
+    </div>
+    
+  </div>
+  <div class="tablet__lifetime__image__wrapper">
+      <img src="{{ 'LifetimeGuaran.webp' | asset_url }}" class="col__image"/>
+  </div>
+  </div>
+</div>
+</div>
+<style>
+.lifetime__col__bg__wrapper{
+    background-color:#FFFDF5;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.lifetime__col__main__wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    margin-left:70px;
+    margin-right:70px;
+    margin-top:90px;
+    margin-bottom:90px;
+    width:100%;
+}
+
+.lifetime__col__image{
+   border-radius: 15px;
+      width: 100%;
+      max-width:506px;
+      height: auto;
+      object-fit: cover;
+}
+    .made__in__france__svg__life__wrapper{
+      position:absolute;
+      transform:translate(-40px,-230px)
+    }
+
+@media screen and (min-width: 2000px){
+  .lifetime__col__main__wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    margin-left:70px;
+    margin-right:70px;
+    margin-top:70px;
+    margin-bottom:70px;
+    width:100%;
+}
+.lifetime__col__image{
+border-radius:15px;
+width:100%;
+max-width:800px;
+height:auto;
+object-fit: cover;
+}
+}
+
+@media screen and (max-width: 1700px){
+.lifetime__col__image{
+border-radius:15px;
+width:100%;
+max-width:506px;
+height:auto;
+}
+}
+.lifetime__col__text__wrapper{
+    display:flex;
+    flex-direction:column;
+}
+.lifetime__col__head,
+.lifetime__col1__head,
+.lifetime__col2__head,
+.lifetime__col__subtext,
+.lifetime__col__button {
+    margin-left:auto;
+    margin-right:auto;
+}
+.lifetime__col__head{
+    text-align:center;
+    color:#4C303F;
+    font-family:columbia-reqular;
+}
+
+
+.lifetime__col__subtext{
+     margin-top: 40px;
+    text-align:center;
+    max-width:543px;
+    color:#4C303F;
+    letter-spacing:0.36px;
+    font-family:work-sans;
+}
+
+
+.lifetime__col__button {
+  margin-top: 60px;
+  color: #4C303F;
+  font-size: 14px;
+  line-height: 24px;
+  width: 174px;
+  border: none;
+  background-color: #FFFDF5;
+  cursor: pointer;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-family: work-sans;
+  position: relative;
+  overflow: hidden;
+  border-bottom:1px solid #4C303F;
+  padding-bottom:10px;
+}
+
+.lifetime__col__button a{
+  color: #4C303F;
+}
+.lifetime__col__button:hover{
+  border-bottom:none;
+}
+.lifetime__col__button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #4C303F;
+  bottom: 0;
+  left: -100%;
+  transition: left 0.4s;
+}
+
+.lifetime__col__button:hover::after {
+  left: 0;
+}
+
+.lifetime__col__button::after {
+  left: -100%;
+}
+
+.lifetime__col__button:hover::after {
+  left: 0;
+}
+
+.lifetime__col__button:hover::after {
+  animation: slideIn 0.4s forwards;
+}
+
+.lifetime__col__button:not(:hover)::after {
+  animation: slideOut 0.4s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+} 
+    @media screen and (max-width:1500px){
+       ..made__in__france__svg__life__wrapper{
+      position:absolute;
+      transform:translate(80px,-200px)
+    }
+      }
+
+
+ {% comment %} mobile tablet {% endcomment %}
+@media screen and (max-width: 1200px){
+      .desktop__lifetime{
+   display:none;
+}
+      .tablet__mobile__world__collection{
+      display:block;
+    }
+
+
+    .tablet__mobile__lifetime__wrapper{
+      margin-left:36px;
+      margin-right:36px;
+      
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      gap:20px;
+     
+    }
+
+    .tablet__mobile__lifetime__text__wrapper{
+     
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+
+      text-align:center;
+    }
+
+    .tab__mob__lifetime__col__head{
+      font-size:32px;
+      line-height:40px;
+      letter-spacing:0.64px;
+      color:#4C303F;
+      font-family:columbia-reqular;
+      padding-top:120px;
+      padding-bottom:30px;
+    }
+
+    .tab__mob__subtext{
+      font-size:18px;
+      line-height:24px;
+      letter-spacing:0.3px;
+      color:#4C303F;
+      font-family:work-sans;
+    }
+
+    .tab__mob__col__button__mobile{
+        border:none;
+     font-size:14px;
+     line-height:24px;
+     letter-spacing:1.4px;
+     color:#4C303F;
+     border-bottom:1px solid #4C303F;
+     text-transform:uppercase;
+     background-color:#FFFDF5;
+     width:188px;
+     padding-top:30px;
+     padding-bottom:10px;
+    }
+
+    .tab__mob__col__button__mobile a{
+      color:#4C303F;
+    }
+           .col__subtext{
+        text-align:center;
+        max-width:585px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:18px;
+        line-height:24px;
+    }
+    .col__button__mobile__wrapper{
+      
+      display:flex;
+      justify-content:center;
+    }
+    .col__button__mobile{
+      
+     
+    }
+
+.tablet__lifetime__image__wrapper{
+  display:flex;
+  justify-content:center;
+      margin-bottom:60px;
+      padding-top:60px;
+}
+        .col__image {
+       border-radius: 15px;
+      width: 100%;
+      height: 400px;
+    }
+}
+
+@media screen and (max-width: 640px){
+       .desktop__lifetime{
+   display:none;
+}
+      .tablet__mobile__world__collection{
+      display:block;
+    }
+
+
+    .tablet__mobile__lifetime__wrapper{
+      margin-left:36px;
+      margin-right:36px;
+      
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      gap:20px;
+     
+    }
+
+    .tablet__mobile__lifetime__text__wrapper{
+     
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+
+      text-align:center;
+    }
+
+    .tab__mob__lifetime__col__head{
+      font-size:25px;
+      line-height:33px;
+      letter-spacing:0.5px;
+      color:#4C303F;
+      font-family:columbia-reqular;
+      padding-top:120px;
+      padding-bottom:30px;
+    }
+
+    .tab__mob__subtext{
+      font-size:15px;
+      line-height:20px;
+      letter-spacing:0.3px;
+      color:#4C303F;
+      font-family:work-sans;
+    }
+
+    .tab__mob__col__button__mobile{
+        border:none;
+     font-size:12px;
+     line-height:24px;
+     letter-spacing:1.2px;
+     color:#4C303F;
+     border-bottom:1px solid #4C303F;
+     text-transform:uppercase;
+     background-color:#FFFDF5;
+     width:188px;
+     padding-top:30px;
+     padding-bottom:10px;
+    }
+           .col__subtext{
+        text-align:center;
+        max-width:585px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:18px;
+        line-height:24px;
+    }
+    .col__button__mobile__wrapper{
+      
+      display:flex;
+      justify-content:center;
+    }
+    .col__button__mobile{
+      
+     
+    }
+
+.tablet__lifetime__image__wrapper{
+  display:flex;
+  justify-content:center;
+  margin-bottom:60px;
+  padding-top:60px;
+}
+        .col__image {
+       border-radius: 15px;
+      width: 100%;
+      height: 400px;
+    }
+}
+</style>

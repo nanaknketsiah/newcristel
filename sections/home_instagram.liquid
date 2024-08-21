@@ -1,0 +1,345 @@
+<div class="main__instagram__bg">
+<div class="instagram__wrapper">
+<h1>Experience the Difference <br><span class="insta__span"> of</span> Cooking with Cristel<sup style="font-size:25px;">®</sup></h1>
+<button class="insta__button"><a href="https://www.instagram.com/cristelusa/?hl=it" target="_blank">Find Us On Instagram</a></button>
+</div>
+<div class="desktop__instagram__swiper__slide">
+  <div class="swiper-container instaswiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="insta__video__wrapper">
+         <a href="https://www.instagram.com/cristelusa/?hl=it" target="_blank"><video src="{{ 'snapvid4.mp4' | asset_url }}" autoplay loop muted playsinline class="insta__video"></video></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="insta__video__wrapper">
+         <a href="https://www.instagram.com/cristelusa/?hl=it" target="_blank"><video src="{{ 'snapvid3.mp4' | asset_url }}" autoplay loop muted playsinline class="insta__video"></video></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="insta__video__wrapper">
+          <a href="https://www.instagram.com/cristelusa/?hl=it" target="_blank"> <video src="{{ 'snapvid2.mp4' | asset_url }}" autoplay loop muted playsinline class="insta__video"></video></a>
+         
+        </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="insta__video__wrapper">
+       
+            <a href="https://www.instagram.com/cristelusa/?hl=it" target="_blank"><video src="{{ 'snapvid1.mp4' | asset_url }}" autoplay loop muted playsinline class="insta__video"></video></a>
+        </div>
+        </div>
+  
+      </div>
+    </div>
+</div>
+
+<div class="mobile__instagram__swiper__slide">
+<div class="instamobileslick">
+  <div>
+  <div class="tab__mob__insta__video__wrapper">
+   <video src="{{ 'Cristel_Social_Mobile1.mp4' | asset_url }}" autoplay loop muted playsinline class="tab__mob__insta__video"></video>
+  </div>
+  </div>
+  <div>
+    <div class="tab__mob__insta__video__wrapper">
+   <video src="{{ 'Cristel_Social_Mobile2.mp4' | asset_url }}" autoplay loop muted playsinline class="tab__mob__insta__video"></video>
+  </div>
+  </div>
+  <div>
+    <div class="tab__mob__insta__video__wrapper">
+   <video src="{{ 'Cristel_Social_Mobile4.mp4' | asset_url }}" autoplay loop muted playsinline class="tab__mob__insta__video"></video>
+  </div>
+  </div>
+    <div>
+      <div class="tab__mob__insta__video__wrapper">
+   <video src="{{ 'Cristel_Social_Mobile2.mp4' | asset_url }}" autoplay loop muted playsinline class="tab__mob__insta__video"></video>
+  </div>
+    </div>
+  <div>
+    <div class="tab__mob__insta__video__wrapper">
+   <video src="{{ 'Cristel_Social_Mobile4.mp4' | asset_url }}" autoplay loop muted playsinline class="tab__mob__insta__video"></video>
+  </div>
+  </div>
+  <div>
+    <div class="tab__mob__insta__video__wrapper">
+   <video src="{{ 'Cristel_Social_Mobile1.mp4' | asset_url }}" autoplay loop muted playsinline class="tab__mob__insta__video"></video>
+  </div>
+  </div>
+</div>
+</div>
+  <div class="instamobile__button__wrapper"><div class="instamobile__button__main"><button class="insta__button__mobile">Find Us On Instagram</button></div></div>
+</div>
+
+<style>
+
+.main__instagram__bg{
+   background-color: #4C303F;
+}
+
+.desktop__instagram__swiper__slide{
+  display:block;
+}
+
+.mobile__instagram__swiper__slide{
+  display:none;
+}
+.instagram__wrapper{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-left:170px;
+    margin-right:170px;
+    padding-top:94px;
+     padding-bottom:94px;
+}
+.instagram__wrapper h1{
+  font-size:44px;
+  line-height:58px;
+  letter-spacing:0.88px;
+  color:#FFF0E2;
+font-family:columbia-reqular;
+max-width:684px;
+}
+
+.insta__span{
+  font-size:60px;
+  line-height:10px;
+  letter-spacing:1.2px;
+  color:#FFF0E2;
+  font-family:gourment-french;
+  padding-right:5px;
+}
+
+.insta__button{
+    background-color:#FAB0B1;
+    border-radius:47px;
+    width:227px;
+    height:38px;
+    color:#4C303F;
+    font-size:18px;
+    line-height:24px;
+    letter-spacing:0.36px;
+    font-family:work-sans;
+    box-shadow:none !important;
+    border:none;
+}
+
+.insta__button a{
+   color:#4C303F;
+}
+ .swiper-container.instaswiper {
+    width: 100%;
+    height: auto; /* Adjust the height to fit the viewport height */
+    background-color: #4C303F;
+    overflow: hidden;
+    padding-bottom:100px;
+}
+
+.swiper-slide.instaswiper {
+    text-align: center;
+    font-size: 18px;
+    background-color: #4C303F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta__video__wrapper {
+    width: 100%;
+    height: auto; /* Ensure the wrapper adjusts to content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4C303F;
+}
+
+.insta__video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-color:#4C303F;
+    max-width: 100%; /* Ensure the video doesn't exceed the container's width */
+    max-height: 100vh; /* Ensure the video doesn't exceed the viewport height */
+    object-fit: cover; /* Ensures the video covers the entire container while maintaining aspect ratio */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.instamobile__button__wrapper{
+  display:none;
+}
+@media screen and (max-width: 1200px){
+.instagram__wrapper{
+    display:flex;
+    flex-direction:column;
+    margin-left:80px;
+    margin-right:80px;
+    align-items:center;
+}
+
+.instagram__wrapper h1{
+  font-size:32px;
+  line-height:40px;
+  letter-spacing:0.64px;
+  color:#FFF0E2;
+font-family:columbia-reqular;
+max-width:403px;
+}
+
+.insta__span{
+  font-size:38px;
+  line-height:40px;
+  letter-spacing:0.76px;
+  color:#FFF0E2;
+  font-family:gourment-french;
+
+}
+
+.insta__button{
+    background-color:#FAB0B1;
+    border-radius:47px;
+    width:166px;
+    height:32px;
+    color:#4C303F;
+    font-size:12px;
+    line-height:14px;
+    letter-spacing:0.24px;
+    font-family:work-sans;
+    box-shadow:none !important;
+    border:none;
+}
+
+}
+@media screen and (max-width: 640px){
+.instagram__wrapper{
+    display:flex;
+    flex-direction:column;
+    margin-left:36px;
+    margin-right:36px;
+    align-items:center;
+}
+.desktop__instagram__swiper__slide{
+  display:block;
+}
+
+.mobile__instagram__swiper__slide{
+  display:none;
+}
+.instagram__wrapper h1{
+  font-size:25px;
+  line-height:33px;
+  letter-spacing:0.64px;
+  color:#FFF0E2;
+font-family:columbia-reqular;
+text-align:center;
+}
+
+.insta__span{
+  font-size:33px;
+  line-height:40px;
+  letter-spacing:0.76px;
+  color:#FFF0E2;
+  font-family:gourment-french;
+
+}
+
+.instamobileslick{
+  gap:10px;
+}
+.instamobileslick .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height:auto;
+  /*min-height: 400px;  Adjust based on your content */
+}
+
+    .insta__video {
+        width: 70%; /* Adjust width for smaller screens */
+        max-width: 70%; /* Ensure it doesn't exceed 90% of the container's width */
+        max-height: 70vh; /* Reduce max height to ensure visibility */
+    }
+
+       .swiper-container.instaswiper {
+        height: auto; /* Adjust the height of the swiper container */
+    }
+
+  .tab__mob__insta__video__wrapper{
+  width:100%;
+  height:auto;
+   
+}
+.tab__mob__insta__video{
+  max-width:742px;
+  height:400px;
+ border-radius:15px;
+}
+.insta__button{
+  display:none;
+}
+.instamobile__button__wrapper{
+  width:100%;
+ 
+  display:block;
+  
+}
+.instamobile__button__main{
+  display:flex;
+  justify-content:center;
+   padding-top:30px;
+  padding-bottom:60px;
+}
+.insta__button__mobile{
+    background-color:#FAB0B1;
+    border-radius:47px;
+    width:237px;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#4C303F;
+    font-size:15px;
+    line-height:24px;
+    letter-spacing:0.3px;
+    font-family:work-sans;
+    box-shadow:none !important;
+    border:none;
+}
+}
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+     var swiperInsta = new Swiper(".instaswiper", {
+    //slidesPerView: 'auto', // Adjusts the number of visible slides based on the container width
+    spaceBetween: 30,
+    resizeObserver: true,
+    autoHeight: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2.5, // 1 slide for small screens
+        },
+        641: {
+            slidesPerView: 2, // 2 slides for medium screens
+        },
+        1024: {
+            slidesPerView: 4, // 3 slides for larger screens
+        }
+    }
+});
+
+    });
+
+    $(document).ready(function(){
+  $('.instamobileslick').slick({
+    autoplay:true,
+    slidesToShow: 1,
+    {% comment %} centerMode:true,
+    centerPadding:'50%', {% endcomment %}
+    infinite:true,
+     arrows:false,
+  });
+});
+</script>

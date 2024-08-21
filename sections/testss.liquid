@@ -1,0 +1,59 @@
+<h1 style="color:{{section.settings.text_color}}">{{section.settings.heading}}</h1>
+
+{% for block in section.blocks %}
+    <div class="example-block">
+      {% if block.settings.image != blank %}
+        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" />
+      {% endif %}
+      <h2>{{ block.settings.block_heading }}</h2>
+      <p>{{ block.settings.block_text }}</p>
+    </div>
+  {% endfor %}
+
+  
+{% schema %}
+{
+ "name": "Example Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Default Heading"
+    },
+        {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Default text."
+    },
+     {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+        {
+      "type": "select",
+      "id": "text_size",
+      "label": "Text Size",
+      "default": "16px",
+      "options": [
+        {
+          "value": "12px",
+          "label": "Small"
+        },
+        {
+          "value": "16px",
+          "label": "Medium"
+        },
+        {
+          "value": "20px",
+          "label": "Large"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

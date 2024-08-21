@@ -1,0 +1,574 @@
+<div class="desktop__testimonial">
+  <div class="testimonial__col__bg__wrapper">
+  <div class="world__collection__main__wrapper">
+  <img src="{{ 'StainlessSteelCookware.webp' | asset_url }}" class="testimonial__col__image"/>
+  <div class="testimonial__col__text__wrapper">
+  <h1 class="testimonial__col__head">The World’s <br><span class="col1__head">Finest</span></h1>
+  <h1 class="col2__head">Stainless Steel Cookware</h1>
+  {% comment %} <p class="testimonial__col__subtext b1">“Probably the best Cookware we’ve ever worked with.”</p>
+  <p class="testimonial__col__subtext2 b1"><b>Michel & Sebastian Bras</b> Le Suqet, France</p> {% endcomment %}
+  
+ <p class="col__subtext b2">For nearly 200 years, Cristel<sup><span class="registeredsignhead">®</span></sup>’s factory has set the standard for stainless steel cookware, forging a legacy of unparalleled craftsmanship and innovation. Our commitment to excellence is reflected in every meticulously crafted piece, designed to offer unmatched performance and timeless beauty.</p>
+  <button class="col__button"><a href="https://www.cristelusa.com/pages/collection">OUR COLLECTIONS</a></button>
+  </div>
+  
+  </div>
+  </div>
+</div>
+
+<div class="tablet__mobile__world__collection">
+<div class="tablet__mobile__bg">
+  <div class="tablet__mobile__world__wrapper">
+  <div class="tablet__mobile__world__text__wrapper">
+   <h1 class="tab__mob__world__collection__head">The World’s <br><span class="tab__mob__world__head2">Finest</span></h1>
+    <h1 class="tab__mob__world__collection__head">Stainless Steel Cookware</h1>
+    <p class="tab__mob__world__collection__subtext b2">For nearly 200 years, Cristel<sup><span class="registeredsignhead">®</span></sup>’s factory has set the standard for stainless steel cookware, forging a legacy of unparalleled craftsmanship and innovation. Our commitment to excellence is reflected in every meticulously crafted piece, designed to offer unmatched performance and timeless beauty.</p>
+    <div class="">
+    <button class="col__button__mobile__world"><a href="https://www.cristelusa.com/pages/collection">OUR COLLECTIONS</a></button>
+    </div>
+    
+  </div>
+  <div class="col__mobile__image__wrapper">
+      <img src="{{ 'StainlessSteelCookware.webp' | asset_url }}" class="col__image"/>
+  </div>
+  </div>
+</div>
+</div>
+    <style>
+
+    .tablet__mobile__world__collection{
+      display:none;
+    }
+
+
+    .world__collection__main__wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    margin-left:70px;
+    margin-right:70px;
+    margin-top:90px;
+    margin-bottom:90px;
+}
+    .col__bg__wrapper{
+        background-color:#FFF0E2;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+    .col__main__wrapper{
+    margin-left:70px;
+    margin-right:70px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:50px;
+        width:100%;
+        margin-top:70px;
+         margin-bottom:70px;
+    }
+    
+    .col__image-wrapper{
+      
+    }
+    .col__image {
+       border-radius: 15px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+
+    .col__text__wrapper{
+        display:flex;
+        flex-direction:column;
+        padding-right:180px;
+    }
+    .col__head,
+    .col1__head,
+    .col2__head,
+    .col__subtext,
+    .col__button {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .col__head{
+       color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+    }
+    
+    .col1__head{
+         text-align:center;
+         color:#4C303F;
+         font-family:gourment-french;
+        font-size:58px;
+         line-height:72px;
+         letter-spacing:1.2px
+    }
+    .col2__head{
+         color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+    }
+    .col__subtext{
+        margin-top:40px;
+        text-align:center;
+        max-width:543px;
+        color:#4C303F;
+        font-family:work-sans;
+    }
+    
+  
+    
+    .col__button {
+      margin-top: 60px;
+      color: #4C303F;
+      font-size: 14px;
+      line-height: 24px;
+      width: 211px;
+      border: none;
+     background-color: #FFF0E2;
+      cursor: pointer;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      font-family: work-sans;
+      position: relative;
+      overflow: hidden;
+      border-bottom:1px solid #4C303F;
+      padding-bottom:10px;
+    } 
+        .col__button a{
+                color: #4C303F;
+        }
+    .col__button:hover{
+      border-bottom:none;
+     }
+    .col__button::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #4C303F;
+      bottom: 0;
+      left: -100%;
+      transition: left 0.4s;
+    }
+    
+    .col__button:hover::after {
+      left: 0;
+    }
+    
+    .col__button::after {
+      left: -100%;
+    }
+    
+    .col__button:hover::after {
+      left: 0;
+    }
+    
+    .col__button:hover::after {
+      animation: slideIn 0.4s forwards;
+    }
+    
+    .col__button:not(:hover)::after {
+      animation: slideOut 0.4s forwards;
+    }
+    
+    @keyframes slideIn {
+      from {
+        left: -100%;
+      }
+      to {
+        left: 0;
+      }
+    }
+    
+    @keyframes slideOut {
+      from {
+        left: 0;
+      }
+      to {
+        left: 100%;
+      }
+    } 
+
+@media screen and (min-width: 3000px){
+          .col__main__wrapper{
+    margin-left:70px;
+    margin-right:70px;
+        margin-top:170px;
+       margin-bottom:170px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:120px;
+         width:100%;
+    }
+          .col__head{
+       color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+        font-size:70px;
+        line-height:75px;
+    }
+
+        .col1__head{
+         text-align:center;
+         color:#4C303F;
+         font-family:gourment-french;
+        font-size:80px;
+        line-height:85px;
+         letter-spacing:1.2px
+    }
+        .col2__head{
+         color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+          font-size:70px;
+        line-height:75px;
+    }
+
+        .col__subtext{
+        margin-top:40px;
+        text-align:center;
+        max-width:1200px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:40px;
+        line-height:42px;
+    }
+
+        .col__button {
+      margin-top: 60px;
+      color: #4C303F;
+      font-size: 30px;
+      line-height: 35px;
+      width: 374px;
+      border: none;
+     background-color: #FFF0E2;
+      cursor: pointer;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      font-family: work-sans;
+      position: relative;
+      overflow: hidden;
+    }
+}
+    @media screen and (min-width: 2000px){
+            .col__main__wrapper{
+    margin-left:70px;
+    margin-right:70px;
+        margin-top:170px;
+       margin-bottom:170px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:120px;
+         width:100%;
+    }
+          .col__head{
+       color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+        font-size:60px;
+        line-height:75px;
+    }
+
+        .col1__head{
+         text-align:center;
+         color:#4C303F;
+         font-family:gourment-french;
+        font-size:70px;
+        line-height:75px;
+         letter-spacing:1.2px
+    }
+        .col2__head{
+         color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+           font-size:60px;
+        line-height:75px;
+    }
+
+        .col__subtext{
+        margin-top:40px;
+        text-align:center;
+        max-width:900px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:25px;
+        line-height:32px;
+    }
+
+        .col__button {
+      margin-top: 60px;
+      color: #4C303F;
+      font-size: 30px;
+      line-height: 35px;
+      width: 374px;
+      border: none;
+     background-color: #FFF0E2;
+      cursor: pointer;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      font-family: work-sans;
+      position: relative;
+      overflow: hidden;
+    }
+    }
+    @media screen and (max-width: 1999px){
+       .col__text__wrapper{
+        display:flex;
+        flex-direction:column;
+        padding-right:280px;
+    }
+    }
+      @media screen and (max-width:1500px){
+            .col__head{
+       color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+        font-size:40px;
+        line-height:45px;
+    }
+
+        .col1__head{
+         text-align:center;
+         color:#4C303F;
+         font-family:gourment-french;
+        font-size:40px;
+        line-height:45px;
+         letter-spacing:1.2px
+    }
+        .col2__head{
+         color:#4C303F;
+        text-align:center;
+        font-family:columbia-reqular;
+          font-size:40px;
+        line-height:45px;
+    }
+
+        .col__subtext{
+        margin-top:40px;
+        text-align:center;
+        max-width:585px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:18px;
+        line-height:24px;
+    }
+            .col__text__wrapper{
+        display:flex;
+        flex-direction:column;
+        padding-right:150px;
+    }
+      }
+
+
+{% comment %} mobile tablet {% endcomment %}
+@media screen and (max-width: 1200px){
+    .desktop__home__world__collection{
+        display:none
+    }
+    .tablet__mobile__world__collection{
+      display:block;
+    }
+
+       .tablet__mobile__bg{
+      background-color:#FFF0E2;
+    }
+        .tablet__mobile__world__wrapper{
+      margin-left:80px;
+      margin-right:80px;
+        padding-top:120px;
+      padding-bottom:60px;
+      
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      gap:20px;
+     
+    }
+
+       .tablet__mobile__world__text__wrapper{
+      
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+   
+      text-align:center;
+     
+    }
+    .tablet__mobile__world__text__wrapper{
+     
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      
+      text-align:center;
+    }
+
+    .tab__mob__world__collection__head{
+      font-size:32px;
+      line-height:40px;
+      letter-spacing:0.5px;
+      color:#4C303F;
+      font-family:columbia-reqular;
+    }
+    .tab__mob__world__head2{
+      font-size:38px;
+      line-height:40px;
+      letter-spacing:0.66px;
+      color:#4C303F;
+      font-family:gourment-french;
+    }
+
+    .tab__mob__world__collection__subtext{
+      font-size:18px;
+      line-height:24px;
+      letter-spacing:0.3px;
+      color:#4C303F;
+      padding-top:36px;
+      padding-bottom:36px;
+     font-family:work-sans;
+    }
+           .col__subtext{
+        text-align:center;
+        max-width:585px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:18px;
+        line-height:24px;
+    }
+    .col__button__mobile__wrapper{
+      
+      display:flex;
+      justify-content:center;
+    }
+    .col__button__mobile__world{
+  border:none;
+     font-size:12px;
+     line-height:24px;
+     letter-spacing:1.2px;
+     color:#4C303F;
+     border-bottom:1px solid #4C303F;
+     text-transform:uppercase;
+     background-color:#FFF0E2;
+     width:188px;
+     padding-bottom:14px;
+    }
+ .col__button__mobile__world a{
+   color:#4C303F;
+ }
+.col__mobile__image__wrapper{
+  display:flex;
+  justify-content:center;
+      margin-bottom:60px;
+      padding-top:120px;
+}
+        .col__image {
+       border-radius: 15px;
+      width: 100%;
+      height: 400px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .desktop__home__world__collection{
+        display:none
+    }
+      .tablet__mobile__world__collection{
+      display:block;
+    }
+
+    .tablet__mobile__bg{
+      background-color:#FFF0E2;
+    }
+    .tablet__mobile__world__wrapper{
+      margin-left:36px;
+      margin-right:36px;
+      
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+  
+     
+    }
+
+    .tablet__mobile__world__text__wrapper{
+     
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      
+      text-align:center;
+    }
+
+    .tab__mob__world__collection__head{
+      font-size:25px;
+      line-height:33px;
+      letter-spacing:0.5px;
+      color:#4C303F;
+      font-family:columbia-reqular;
+    }
+    .tab__mob__world__head2{
+      font-size:33px;
+      line-height:40px;
+      letter-spacing:0.66px;
+      color:#4C303F;
+      font-family:gourment-french;
+    }
+
+    .tab__mob__world__collection__subtext{
+      font-size:15px;
+      line-height:20px;
+      letter-spacing:0.3px;
+      color:#4C303F;
+      padding-top:30px;
+      padding-bottom:30px;
+     font-family:work-sans;
+    }
+           .col__subtext{
+        text-align:center;
+        max-width:585px;
+        color:#4C303F;
+        font-family:work-sans;
+        font-size:18px;
+        line-height:24px;
+    }
+    .col__button__mobile__wrapper{
+      display:flex;
+      justify-content:center;
+    }
+    .col__button__mobile__world{
+  border:none;
+     font-size:12px;
+     line-height:24px;
+     letter-spacing:1.2px;
+     color:#4C303F;
+     border-bottom:1px solid #4C303F;
+     text-transform:uppercase;
+     background-color:#FFF0E2;
+     width:188px;
+     padding-bottom:10px;
+    }
+
+.col__mobile__image__wrapper{
+  display:flex;
+  justify-content:center;
+      margin-bottom:60px;
+      padding-top:100px;
+}
+        .col__image {
+       border-radius: 15px;
+      width: 100%;
+      height: 400px;
+    }
+}
+
+
+
+
+    </style>
